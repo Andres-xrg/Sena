@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Instructores</title>
+    <link rel="stylesheet" href="css_registros/style_registro_2.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo-de-Sena-sin-fondo-Blanco-300x300.webp" alt="SENA" class="logo-image">
+                <span class="role">Nombre<br>Rol</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="instructores.html">Instructores</a></li>
+                    <li><a href="fichas.html">Fichas</a></li>
+                    <li><a href="Registro.html">Registro</a></li>
+                </ul>
+            </nav>
+            </nav>
+            <p><button class="logout-button">Cerrar sesión</button></p>
+        </div>
+    </header>
+
+    <main>
+        <h2>Instructores</h2>
+        <section class="new-instructor">
+            <h3>Registrar nuevo instructor</h3>
+            <form>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos">
+                </div>
+                <div>
+                    <label for="tipo_documento">Tipo de Documento</label>
+                    <input type="text" id="tipo_documento" name="tipo_documento">
+                </div>
+                <div>
+                    <label for="n_documento">N° Documento</label>
+                    <input type="text" id="n_documento" name="n_documento">
+                </div>
+                <div>
+                    <label for="fecha_inicio_contrato">Fecha inicio contrato</label>
+                    <input type="date" id="fecha_inicio_contrato" name="fecha_inicio_contrato">
+                </div>
+                <div>
+                    <label for="fecha_fin_contrato">Fecha fin contrato</label>
+                    <input type="date" id="fecha_fin_contrato" name="fecha_fin_contrato">
+                </div>
+                <div class="foto">
+                    <label for="foto_perfil_instructor">Foto</label>
+                    <img src="img/usuario.png" alt="Foto perfil instructor">
+                </div>
+                <button type="submit">Registrar Instructor</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="support">
+            <p class="espacio">Soporte</p><br>
+        </div>
+        <div class="support_2">
+            <img src="img/email.webp" class="image_correo"> 
+        </div>
+        <div class="support_3">
+            <p>Correo Electrónico</p><br>
+        </div>
+        <div class="support_4">
+            <p>SenaCDITI@Soy_sena.edu.co</p>
+        </div>
+        <div class="footer-bottom">
+            <span>Derechos reservados por SENA CDITI</span>
+        </div>
+    </footer>
+</body>
+</html>

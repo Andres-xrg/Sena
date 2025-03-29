@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Work Sans;
+    margin: 0;
+    padding: 0;
+}
+
+.browser-bar {
+    background-color: #e6e6e6;
+    padding: 10px;
+    text-align: center;
+}
+
+.address-bar p {
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background-color: #002147;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo-image {
+    height: 80px;
+    width: 80px;
+}
+
+.role {
+    color: #39A900;
+    margin-left: 10px;
+    font-weight: bold;
+    text-align: left;;
+    font-size: 30px;
+}
+
+.nav-menu a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 25px;
+    background-color: #39A900;
+    border-radius: 15px;
+}
+
+.logout-button {
+    background-color: #d3d3d3;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px 0 100px 0; 
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    background-color: #e6e6e6;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.button {
+    background-color: #d3d3d3;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.image-placeholder {
+    background-color: white;
+    color: black;
+    padding: 60px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #39A900;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.support {
+margin: -15px;
+}
+.support_2{
+    padding: 0;
+}
+
+.support_3{
+    margin: 19px; 
+    height: 19px;
+}
+
+.support_4{
+    margin:-15px;
+}
+
+.image_correo {
+    padding: 0;
+    height: 50px;
+    width: 50px;
+}
+.espacio{
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    background-color: #002147;
+    padding: 10px 0;
+    color: white;
+}

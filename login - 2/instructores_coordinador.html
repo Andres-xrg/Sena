@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructores</title>
+    <link rel="stylesheet" href="css_fichas_instructores_coordinador/estilo_instructor_coordinador.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo-de-Sena-sin-fondo-Blanco-300x300.webp" alt="SENA" class="logo-image">
+                <span class="role">Nombre<br>Rol</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="nav-menu">
+              <ul>
+                <li>
+                    <a href="Inicio_coordinador.html">Inicio</a>
+                    <a href="instructores_coordinador.html">Instructores</a>
+                    <a href="fichas_coordinador.html">Fichas</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="Login.html">
+                <button class="logout-button">Cerrar sesión</button>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="left-title">Instructores</h1>
+        <div class="instructor-container">
+        </div>
+
+        <div class="datos-container">
+            <div class="datos-card">
+                <div class="instructor-info">
+                    <img src="img/usuario.png" alt="Instructor" class="instructor-image">
+                    <div>
+                        <h2>Nombre del Instructor</h2>
+                    </div>
+                </div>
+                
+                <div class="inline-fields">
+                    <div>
+                        <label>Se Especializa en:</label>
+                        <input type="text" name="nombre_aprendiz" placeholder="(Nombre del )">
+                    </div>
+                    <div>
+                        <label>Líder de ficha</label>
+                        <input type="text" name="numero_trimestre" placeholder="el número de ficha">
+                    </div>
+                    <div>
+                        <label>Horario</label>
+                        <input type="text" name="horario" placeholder="Ingrese el horario">
+                    </div>
+                    <div>
+                        <label>Correo institucional</label>
+                        <input type="email" name="correo_aprendiz" placeholder="Ingrese su correo institucional">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="support">
+            <span>Soporte</span><br>
+            <span>Correo Electrónico: SenaCDITI@soy_sena.edu.co</span>
+        </div>
+        <div class="footer-bottom">
+            <span>Derechos reservados por SENA CDITI</span>
+        </div>
+    </footer>
+</body>
+</html>

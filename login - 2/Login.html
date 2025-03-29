@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - SENA</title>
+    <link rel="stylesheet" href="css_login/style_login.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/logo-de-Sena-sin-fondo-Blanco-300x300.webp" alt="Logo SENA" class="logo">
+            <h1>E&K Software</h1>
+            <h2>Bienvenido</h2>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <h3>Iniciar sesión</h3>
+                <form class="login-form">
+                    <input type="email" placeholder="Correo" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <button type="submit">Iniciar sesión</button>
+                </form>
+                <p class="welcome-text">Bienvenido a la familia SENA</p>
+                <a href="Registro.html" class="link">
+                    <p id="Registro">Si no tienes una cuenta puedes: Registrarte</p>
+                </a>
+                <a href="Contraseña.html" class="link">
+                    <p id="Contraseña">¿Olvidaste tu contraseña? Cámbiala</p>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Derechos reservados por SENA CDITI</p>
+        </footer>
+    </div>
+    <script>
+        document.querySelector('.login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = 'inicio.html'; 
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #002147;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-image {
+    height: 60px;
+}
+
+.role {
+    color: #39A900;
+    margin-left: 10px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-menu a {
+    margin: 5px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #39A900;
+    border-radius: 10px;
+}
+
+.logout-button {
+    background-color: #d3d3d3;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    background: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    border-radius: 5px;
+}
+
+.nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #002147;
+    padding: 10px 0;
+}
+
+.nav-menu a {
+    margin: 10px;
+    background-color: #39A900;
+    padding: 15px;
+}
+
+
+main {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    flex: 1; 
+}
+
+.left-title {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.instructor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.instructor-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    background-color: #e6e6e6;
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.instructor-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.instructor-image {
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+}
+
+.instructor-horario {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.datos-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.datos-card {
+    background-color: #e6e6e6;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inline-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inline-fields > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.inline-fields label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.inline-fields input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #39A900;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    margin-top: auto; 
+}
+
+.support {
+    margin-bottom: 10px;
+}
+
+.support_2{
+    padding: 0;
+}
+
+.footer-bottom {
+    background-color: #002147;
+    padding: 5px 0;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-wrap: nowrap;
+    }
+
+    .logo-image {
+        height: 80px;
+    }
+
+    .role {
+        font-size: 30px;
+    }
+
+    .nav-menu {
+        width: auto;
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .instructor-card {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .inline-fields {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .inline-fields > div {
+        width: 23%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+}
+.card {
+    background-color: #e6e6e6;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+li{
+    list-style: none;
+}

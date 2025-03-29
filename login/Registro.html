@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - SENA</title>
+    <link rel="stylesheet" href="css_login/style_login.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/logo-de-Sena-sin-fondo-Blanco-300x300.webp" alt="Logo SENA" class="logo">
+            <h1>E&K Software</h1>
+            <h2>Bienvenido</h2>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <h3>Crea cuenta</h3>
+                <form class="registro-form">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Apellido" required>
+                    <input type="email" placeholder="Correo" required>
+                    <select required>
+                        <option value="" disabled selected>Tipo documento</option>
+                        <option value="cc">Cédula de Ciudadanía</option>
+                        <option value="ti">Tarjeta de Identidad</option>
+                        <option value="ce">Cédula de Extranjería</option>
+                    </select>
+                    <input type="text" placeholder="N° Identificación" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <input type="password" placeholder="Confirmar contraseña" required>
+                    <button type="submit">Registrarse</button>
+                </form>
+                <p class="welcome-text">Bienvenido a la familia SENA</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Derechos reservados por SENA CDITI</p>
+        </footer>
+    </div>
+    <script>
+        document.querySelector('.registro-form').addEventListener('submit', function(event) {
+          event.preventDefault(); 
+          window.location.href = 'Login.html';
+      });
+    </script>
+</body>
+</html>
+</html>

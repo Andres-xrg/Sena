@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fichas</title>
+    <link rel="stylesheet" href="css_fichas_instructores_coordinador/Estilo_fichas_coordinador.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo-de-Sena-sin-fondo-Blanco-300x300.webp" alt="SENA" class="logo-image">
+                <span class="role">Nombre<br>Rol</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="nav-menu">
+                <li>
+                    <a href="Inicio_coordinador.html">Inicio</a>
+                    <a href="instructores_coordinador.html">Instructores</a>
+                    <a href="fichas_coordinador.html">Fichas</a>
+                </li>
+            </nav>
+            <p><button class="logout-button">Cerrar sesión</button></p>
+        </div>
+    </header>
+
+    <main>
+        <div class="title-container">
+            <h1 class="left-title">Fichas</h1>
+            <div class="number-fields">
+                <div class="N°Ficha">
+                    <label for="numero-ficha">N° Ficha</label>
+                    <input type="text" id="numero-ficha" placeholder="Ingrese el número de ficha">
+                </div>
+                <div class="N°Trimesrte">
+                    <label for="numero-trimestre">N° Trimestre</label>
+                    <input type="text" id="numero-trimestre" placeholder="Ingrese el número de trimestre">
+                </div>
+            </div>
+        </div>
+
+        <div class="datos-container">
+            <div class="datos-card">
+                <div class="instructor-info">
+                    <div class="info-text">
+                        <h2>(N° Fichas) Aprendices</h2>
+                    </div>
+                    <img src="img/usuario.png" alt="Instructor" class="instructor-image">
+                </div>
+
+                <div class="inline-fields">
+                    <div>
+                        <label>Nombre Aprendiz</label>
+                        <input type="text" name="Competencias" placeholder="Ingrese su competencia">
+                    </div>
+                    <div>
+                        <label>Tipo de Documento</label>
+                        <input type="text" name="Documento" placeholder="Ingrese el tipo de documento">
+                    </div>
+                    <div>
+                        <label>Numero de Documento</label>
+                        <input type="text" name="Documento" placeholder="Ingrese el documento">
+                    </div>
+                    <div>
+                        <label>Correo institucional</label>
+                        <input type="email" name="correo_aprendiz" placeholder="Ingrese su correo institucional">
+                    </div>
+                </div>
+                <a href="competencia_coordinador.html">
+                <button class="competencias-button">Competencias</button>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="support">
+            <p class="espacio">Soporte</p><br>
+        </div>
+        <div class="support_2">
+            <img src="img/email.webp" class="image_correo"> 
+        </div>
+        <div class="support_3">
+            <p>Correo Electrónico</p><br>
+        </div>
+        <div class="support_4">
+            <p>SenaCDITI@Soy_sena.edu.co</p>
+        </div>
+        <div class="footer-bottom">
+            <span>Derechos reservados por SENA CDITI</span>
+        </div>
+    </footer>
+</body>
+</html>

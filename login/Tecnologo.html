@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis y Desarrollo de software</title>
+    <link rel="stylesheet" href="css_tecnico_tecnologo/style_tecnico.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo-de-Sena-sin-fondo-Blanco-300x300.webp" alt="SENA" class="logo-image">
+                <span class="role">Nombre<br>Rol</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="instructores.html">Instructores</a></li>
+                    <li><a href="fichas.html">Fichas</a></li>
+                    <li><a href="Registro.html">Registro</a></li>
+                </ul>
+            </nav>
+            <a href="Login.html">
+                <button class="logout-button">Cerrar sesión</button>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Técnico en programación de software</h1>
+
+        <div class="content">
+            <div class="card">
+                <a href="instructores.html">
+                    <button class="button">Instructores</button>
+                </a>
+                <div class="image-placeholder">Imagen</div>
+            </div>
+            <div class="card">
+                <a href="fichas.html">
+                    <button class="button">Fichas</button>
+                </a>
+                <div class="image-placeholder">Imagen</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="support">
+            <p class="espacio">Soporte</p><br>
+        </div>
+        <div class="support_2">
+            <img src="img/email.webp" class="image_correo"> 
+        </div>
+        <div class="support_3">
+            <p>Correo Electrónico</p><br>
+        </div>
+        <div class="support_4">
+            <p>SenaCDITI@Soy_sena.edu.co</p>
+        </div>
+        <div class="footer-bottom">
+            <span>Derechos reservados por SENA CDITI</span>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
